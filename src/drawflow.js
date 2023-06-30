@@ -1440,7 +1440,7 @@ class Drawflow {
                 connection.appendChild(path);
                 var labels = dataNode.inputs[input_item].connections[output_item].labels;
                 if (labels) {
-                    var connectionLabel = buildConnectionLabels(labels, dataNode.id, dataNode.inputs[input_item].connections[output_item].node)
+                    var connectionLabel = buildConnectionLabels((labels.length > 1)? [labels.join('/ ')] : labels, dataNode.id, dataNode.inputs[input_item].connections[output_item].node)
                     connection.appendChild(connectionLabel);
                 }
                 precanvas.appendChild(connection);

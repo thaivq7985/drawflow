@@ -1,5 +1,5 @@
 {
-  "name": "drawflow",
+  "name": "@thaivq/drawflow",
   "version": "0.0.59",
   "description": "Simple flow library",
   "main": "dist/drawflow.min.js",
